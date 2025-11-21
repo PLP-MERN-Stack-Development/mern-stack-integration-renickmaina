@@ -1,0 +1,63 @@
+MERN Blog App
+
+Features;
+
+-User authentication with JWT
+
+-Register and Login
+
+-Create, Read, Update, Delete posts
+
+-View all posts on the homepage
+
+-View single post details
+
+-Protected routes for creating and editing posts
+
+-Delete posts with confirmation
+
+-Toast notifications for success/error messages
+
+-Responsive and interactive UI with Tailwind + shadcn
+
+Backend structure
+backend/
+├── controllers/
+│   ├── authController.js
+│   └── postController.js
+├── middleware/
+│   └── authMiddleware.js
+├── models/
+│   ├── userModel.js
+│   └── postModel.js
+├── routes/
+│   ├── authRoutes.js
+│   └── postRoutes.js
+├── server.js
+└── .env
+Frontend structure
+frontend/
+├── index.html
+├── package.json
+├── vite.config.js
+└── src/
+    ├── main.jsx
+    ├── App.jsx
+    ├── api/axios.js
+    ├── components/
+    │   ├── Navbar.jsx
+    │   └── PostCard.jsx
+    ├── context/
+    │   ├── AuthContext.jsx
+    │   └── ToastContext.jsx
+    ├── lib/utils.js
+    ├── pages/
+    │   ├── Home.jsx
+    │   ├── Login.jsx
+    │   ├── Register.jsx
+    │   ├── CreatePost.jsx
+    │   ├── EditPost.jsx
+    │   └── ViewPost.jsx
+    └── styles/index.css
+
+Run:npm run dev (both on front end and backend to get the up and running)
